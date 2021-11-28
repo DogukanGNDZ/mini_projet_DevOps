@@ -86,8 +86,8 @@ class Berlin_Clock_Kata
             }
         }
 
-     public function BerlinClockInitialization($heure,$minute,$seconde):void {
-         $this->BlocdeSecondeCLock($seconde) + $this->Blocde5HeureCLock($heure) + $this->Blocde1HeureCLock($heure) + $this->minute5($minute)+ $this->minute($minute);
+     public function BerlinClockInitialization($heure,$minute,$seconde):String {
+         return $this->BlocdeSecondeCLock($seconde) + $this->Blocde5HeureCLock($heure) + $this->Blocde1HeureCLock($heure) + $this->minute5($minute)+ $this->minute($minute);
      }
 
 }
