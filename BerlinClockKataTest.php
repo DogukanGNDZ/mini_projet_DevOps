@@ -196,5 +196,12 @@ class BerlinClockKataTest  extends TestCase{
         //Assert
         $this->assertEquals("RRRO",$actual);
     }
-
+    public function testBlocde1HeureCLock19ShouldReturn4Lamp():void{
+        //Arrange
+        $Berlin_Clock = new Berlin_Clock_Kata();
+        //Act
+        $actual =$Berlin_Clock->Blocde1HeureCLock(19);
+        //Assert
+        $this->assertEquals("RRRR",$actual);
+    }
 }
