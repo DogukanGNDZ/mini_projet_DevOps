@@ -20,4 +20,13 @@ class BerlinClockKataTest  extends TestCase{
         //Assert
         $this->assertEquals("YYOO",$actual);
     }
+
+    public function testMinute3ShouldReturn3Lamp():void{
+        //Arrange
+        $Berlin_Clock = new Berlin_Clock_Kata();
+        //Act
+        $actual =$Berlin_Clock->minute(3);
+        //Assert
+        $this->assertEquals("YYYO",$actual);
+    }
 }
