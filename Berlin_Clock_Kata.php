@@ -46,5 +46,22 @@ class Berlin_Clock_Kata
             return $ligne4 = "OOOOOOOOOOO";
         }
     }
+
+    public function Blocde1HeureCLock($heure): string
+    {
+        if ($heure % 5 == 0) {
+            return $ligne3 = "OOOO";
+        } else if ($heure % 5 == 1) {
+            return $ligne3 = "YOOO";
+        } else if ($heure % 5 == 2) {
+            return $ligne3 = "YYOO";
+        } else if ($heure % 5 == 3) {
+            return $ligne3 = "YYYO";
+        } else {
+            return $ligne3 = "YYYY";
+        }
+    }
+
+
 }
 
