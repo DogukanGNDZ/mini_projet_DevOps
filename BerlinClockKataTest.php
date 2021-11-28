@@ -170,7 +170,7 @@ class BerlinClockKataTest  extends TestCase{
         //Act
         $actual =$Berlin_Clock->Blocde1HeureCLock(2);
         //Assert
-        $this->assertEquals("YYOO",$actual);
+        $this->assertEquals("RROO",$actual);
     }
 
 }
