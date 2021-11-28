@@ -76,7 +76,15 @@ class Berlin_Clock_Kata
             return $ligne3 = "RRRR";
         }
     }
-
+    public function BlocdeSecondeCLock($seconde): string
+    {
+        if ($seconde % 2 == 0) {
+            return $ligne1 = "R";
+        }
+        else{
+                return $ligne1 = "O";
+            }
+        }
 
 }
 
