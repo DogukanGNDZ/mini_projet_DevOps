@@ -20,27 +20,27 @@ class Berlin_Clock_Kata
 
     public function minute5($min): string
     {
-        if ($min / 5 == 11) {
+        if (floor($min / 5) == 11) {
             return $ligne4 = "YYRYYRYYRYY";
-        } else if ($min / 5 == 10) {
+        } else if (floor($min / 5) == 10) {
             return $ligne4 = "YYRYYRYYRYO";
-        } else if ($min / 5 == 9) {
+        } else if (floor($min / 5) == 9) {
             return $ligne4 = "YYRYYRYYROO";
-        } else if ($min / 5 == 8) {
+        } else if (floor($min / 5) == 8) {
             return $ligne4 = "YYRYYRYYOOO";
-        } else if ($min / 5 == 7) {
+        } else if (floor($min / 5) == 7) {
             return $ligne4 = "YYRYYRYOOOO";
-        } else if ($min / 5 == 6) {
+        } else if (floor($min / 5) == 6) {
             return $ligne4 = "YYRYYROOOOO";
-        } else if ($min / 5 == 5) {
+        } else if (floor($min / 5) == 5) {
             return $ligne4 = "YYRYYOOOOOO";
-        } else if ($min / 5 == 4) {
+        } else if (floor($min / 5) == 4) {
             return $ligne4 = "YYRYOOOOOOO";
-        } else if ($min / 5 == 3) {
+        } else if (floor($min / 5) == 3) {
             return $ligne4 = "YYROOOOOOOO";
-        } else if ($min / 5 == 2) {
+        } else if (floor($min / 5) == 2) {
             return $ligne4 = "YY0OOOOOOOO";
-        } else if ($min / 5 == 1) {
+        } else if (floor($min / 5) == 1) {
             return $ligne4 = "YOOOOOOOOOO";
         } else {
             return $ligne4 = "OOOOOOOOOOO";
