@@ -101,4 +101,13 @@ class BerlinClockKataTest  extends TestCase{
         //Assert
         $this->assertEquals("YYRYYOOOOOO",$actual);
     }
+
+    public function test5Minute34ShouldReturn6Lamp():void{
+        //Arrange
+        $Berlin_Clock = new Berlin_Clock_Kata();
+        //Act
+        $actual =$Berlin_Clock->minute5(34);
+        //Assert
+        $this->assertEquals("YYRYYROOOOO",$actual);
+    }
 }
