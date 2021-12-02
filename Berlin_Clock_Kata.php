@@ -5,17 +5,7 @@ class Berlin_Clock_Kata
 
     public function minute($min): string
     {
-        if ($min % 5 == 0) {
-            return $ligne5 = "OOOO";
-        } else if ($min % 5 == 1) {
-            return $ligne5 = "YOOO";
-        } else if ($min % 5 == 2) {
-            return $ligne5 = "YYOO";
-        } else if ($min % 5 == 3) {
-            return $ligne5 = "YYYO";
-        } else {
-            return $ligne5 = "YYYY";
-        }
+        return $this->extracted3($min);
     }
 
     public function minute5($min): string
@@ -114,6 +104,25 @@ class Berlin_Clock_Kata
             return $ligne3 = "RRRO";
         } else {
             return $ligne3 = "RRRR";
+        }
+    }
+
+    /**
+     * @param $min
+     * @return string
+     */
+    public function extracted3($min): string
+    {
+        if ($min % 5 == 0) {
+            return $ligne5 = "OOOO";
+        } else if ($min % 5 == 1) {
+            return $ligne5 = "YOOO";
+        } else if ($min % 5 == 2) {
+            return $ligne5 = "YYOO";
+        } else if ($min % 5 == 3) {
+            return $ligne5 = "YYYO";
+        } else {
+            return $ligne5 = "YYYY";
         }
     }
 
