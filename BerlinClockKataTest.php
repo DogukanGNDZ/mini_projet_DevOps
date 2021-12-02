@@ -265,4 +265,12 @@ class BerlinClockKataTest  extends TestCase{
         //Assert
         $this->assertEquals("O",$actual);
     }
+
+    public function testBerlinClockKata(){
+        $Berlin_Clock = new Berlin_Clock_Kata();
+        //Act
+        $actual =$Berlin_Clock->BerlinClockInitialization(5,32,24);
+        //Assert
+        $this->assertEquals("RROOOOOOOYYRYYROOOOOYYOO",$actual);
+    }
 }
