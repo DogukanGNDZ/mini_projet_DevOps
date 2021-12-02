@@ -265,4 +265,6 @@ class BerlinClockKataTest  extends TestCase{
         //Assert
         $this->assertEquals("O",$actual);
     }
+
+
 }
