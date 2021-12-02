@@ -1,4 +1,5 @@
 <?php
+require_once ("refactoredMethod.php");
 class Berlin_Clock_Kata
 {
 
